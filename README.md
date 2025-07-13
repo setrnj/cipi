@@ -24,8 +24,8 @@
 2. 准备数据  
    将待统计的文本文件命名为 `input.txt` 放在项目根目录。
 
-3. 运行脚本  
-##### cd /root/spark-demo
+3. 运行脚本
+```##### cd /root/spark-demo
 ##### export PYSPARK_PYTHON=python3
 ##### /opt/programs/spark-2.3.3-bin-hadoop2.7/bin/spark-submit wordcount.py
 
@@ -41,12 +41,12 @@
 你们有你们的黎巴嫩，我有我的黎巴嫩。: 3
 我的心重负着累累果实: 2
 ## 项目目录结构
-###wordcount-spark-demo/
-### │
-### ├── wordcount.py        #### 主程序
-### ├── input.txt           #### 示例输入文本
-### ├── README.md           #### 项目说明文档
-### └── screenshot.png      #### 运行示例
+```wordcount-spark-demo/
+ │
+ ├── wordcount.py        主程序
+ ├── input.txt            示例输入文本
+ ├── README.md           # 项目说明文档
+ └── screenshot.png      #运行示例
 ## 技术实现与亮点
 - 使用 Apache Spark 的 RDD 机制，实现分布式高性能统计
 - 针对中文/英文混合文本的分词与编码问题做了适配
