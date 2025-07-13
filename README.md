@@ -25,15 +25,14 @@
    将待统计的文本文件命名为 `input.txt` 放在项目根目录。
 
 3. 运行脚本  
- [root@hadoop01 ~]# cd /root/spark-demo
-[root@hadoop01 spark-demo]# export PYSPARK_PYTHON=python3
-[root@hadoop01 spark-demo]# /opt/programs/spark-2.3.3-bin-hadoop2.7/bin/spark-submit wordcount.py
+  cd /root/spark-demo
+# export PYSPARK_PYTHON=python3
+# /opt/programs/spark-2.3.3-bin-hadoop2.7/bin/spark-submit wordcount.py
 
 
 ## 使用示例
 
 文本样例（input.txt）：
-```
 你们有你们的黎巴嫩，我有我的黎巴嫩。
 我的心重负着累累果实
 你们有你们的黎巴嫩，我有我的黎巴嫩
@@ -41,10 +40,6 @@
 运行结果：
 你们有你们的黎巴嫩，我有我的黎巴嫩。: 3
 我的心重负着累累果实: 2
-<img width="828" height="614" alt="image" src="https://github.com/user-attachments/assets/5727e1c7-a7c3-4a47-80c6-cb0806c586e0" />
-
-
-![运行截图](./screenshot.png)
 ## 项目目录结构
 wordcount-spark-demo/
 │
@@ -57,8 +52,8 @@ wordcount-spark-demo/
 - 针对中文/英文混合文本的分词与编码问题做了适配
 - 支持灵活扩展，后续可用于情感分析、关键词提取等
 ## 常见问题
-- **编码错误**：请确保使用 Python3 并设置 `export PYSPARK_PYTHON=python3`
-- **找不到文件**：请检查输入文件路径和名
+- 编码错误：请确保使用 Python3 并设置 `export PYSPARK_PYTHON=python3`
+- 找不到文件：请检查输入文件路径和名
 ## License
 
 MIT
